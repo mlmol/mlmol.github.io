@@ -1,0 +1,42 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top:    50px;
+    padding-bottom: 20px;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #24404b;
+}
+
+.person {
+  background: #dcdcdc;
+  border: solid #aaaaaa 1px;
+  border-radius: 5px;"
+  padding: 5px;
+  margin:  5px;
+  min-height: 120px;
+}
+
+.selfie {
+    float:left;
+    height: 100px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+div#news {
+    background-image: url(img/cph.png);
+}
+
+h3 {
+    padding-top: 40px;
+}
+
