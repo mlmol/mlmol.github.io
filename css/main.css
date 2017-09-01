@@ -1,0 +1,124 @@
+body {
+    font-family: 'Assistant', sans-serif;
+    overflow-x: hidden;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #443322;
+}
+
+.anchor {
+    padding-top: 50px;
+    margin-top: -50px;
+}
+
+h1, .h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+h2,.h2 {
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+h3,.h3 {
+    font-size: 18px;
+}
+
+b, strong {
+    color: #A53F35;
+}
+
+a,
+a:focus,
+a:active,
+a.active {
+    color: #A53F35;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EEBB77;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: rgba(255, 238, 204, 0.85);
+    border-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+    color: #443322;
+    font-weight: bold;
+}
+
+
+
+.navbar-default .navbar-nav > li > a {
+    color: #A53F35;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #EEBB77;
+}
+
+.navbar-default .navbar-nav > .active > a {
+    color: #A53F35;
+    background-color: #F3D8AC;
+}
+
+
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus  {
+    color: #0F646E;
+    background-color: #F3D8AC;
+}
+
+/* Other styles */
+
+.obfuscate span {
+    display: none;
+}
+
+.social {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Boxes */
+
+.jumbotron {
+    margin-bottom: 0px;
+    background-position: 0% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+
+.person {
+    /* background: #F3D8AC; */
+    background: rgb(255, 238, 204);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin:  5px;
+    min-height: 120px;
+}
+
+.portrait {
+    float:left;
+    height: 100px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+div#banner {
+    background-image: url(../img/cphh.png);
+}
+
+#bannertxt {
+    background-color: rgba(255, 238, 204, .75);;
+}
