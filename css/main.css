@@ -54,7 +54,7 @@ a:hover {
 }
 
 .navbar {
-    background-color: rgba(25,118,210,0.925);
+    background-color: rgba(25,118,210,0.95);
     border-color: transparent;
 }
 
@@ -96,7 +96,9 @@ a:hover {
     background-color: #1976D2;
 }
 
-.navbar-default .navbar-toggle:hover {
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:active{
     background-color: #1976D2;
 }
 
