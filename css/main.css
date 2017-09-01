@@ -74,6 +74,20 @@ a:hover {
     background-color: #F3D8AC;
 }
 
+/* The burger menu */
+.navbar-default .navbar-toggle {
+    border-color: #443322;
+    background-color: #F3D8AC;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: #EEBB77;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #443322;
+}
+
 /* Other styles */
 
 .obfuscate span {
@@ -95,7 +109,7 @@ a:hover {
 }
 
 
-.person {
+div.person {
     /* background: #F3D8AC; */
     background: rgb(255, 238, 204);
     border: none;
@@ -113,6 +127,10 @@ a:hover {
     margin-bottom: 5px;
     margin-left: 5px;
     border-radius: 5px;
+}
+
+a.person {
+    font-weight: bold;
 }
 
 div#banner {
