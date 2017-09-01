@@ -5,6 +5,7 @@
 .light-primary-color   { background: #BBDEFB; }
 .text-primary-color    { color: #FFFFFF; }
 .accent-color          { background: #FF5722; }
+.accent-color-dark     { background: #E64A19; }
 .primary-text-color    { color: #212121; }
 .secondary-text-color  { color: #757575; }
 .divider-color         { border-color: #BDBDBD; }
@@ -91,16 +92,16 @@ a:hover {
 
 /* The burger menu */
 .navbar-default .navbar-toggle {
-    border-color: #443322;
-    background-color: #F3D8AC;
+    border-color: #1976D2;
+    background-color: #1976D2;
 }
 
 .navbar-default .navbar-toggle:hover {
-    background-color: #F3D8AC;
+    background-color: #1976D2;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #443322;
+    background-color: #FFFFFF;
 }
 
 /* Other styles */
@@ -147,6 +148,12 @@ a.person {
     color: #FF5722;
     font-weight: bold;
 }
+
+a.person:hover {
+    color: #E64A19;
+    font-weight: bold;
+}
+
 
 div#banner {
     background-image: url(../img/cphh.png);
