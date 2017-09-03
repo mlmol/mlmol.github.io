@@ -18,6 +18,10 @@ body {
     color: #212121;
 }
 
+.secondary {
+    color: #757575;
+}
+
 .anchor {
     padding-top: 50px;
     margin-top: -50px;
@@ -31,15 +35,21 @@ h2,.h2 {
     color: #1976D2;
     font-size: 26px;
     font-weight: bold;
-    padding-top: 10px;
+    padding-top: .5em;
 }
 h3,.h3 {
     color: #2196F3;
     font-size: 18px;
+    padding-top: .5em;
 }
 
-b, strong {
+b {
+    color: #2196F3;
+}
+
+strong {
     color: #FF5722;
+    font-weight: bold;
 }
 
 a,
