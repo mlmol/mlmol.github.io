@@ -28,11 +28,13 @@ h1, .h1 {
     font-weight: bold;
 }
 h2,.h2 {
+    color: #1976D2;
     font-size: 26px;
     font-weight: bold;
     padding-top: 10px;
 }
 h3,.h3 {
+    color: #2196F3;
     font-size: 18px;
 }
 
@@ -105,6 +107,22 @@ a:hover {
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #FFFFFF;
 }
+
+/* Buttons */
+
+.btn-accent,
+.btn-accent:active,
+.btn-accent:visited,
+.btn-accent:focus {
+    background-color: #FF5722;
+    border-color: none;
+    color: #FFFFFF;
+}
+
+.btn-accent:hover {
+    background-color: #E64A19;
+}
+
 
 /* Other styles */
 
