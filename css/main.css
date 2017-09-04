@@ -22,6 +22,19 @@ body {
     color: #757575;
 }
 
+a.secondary,
+a.secondary:focus,
+a.secondary:active,
+a.secondary.active {
+    color: #757575;
+    text-decoration: underline;
+}
+
+a.secondary:hover {
+    color: #2196F3;
+    text-decoration: underline;
+}
+
 .anchor {
     padding-top: 50px;
     margin-top: -50px;
@@ -43,8 +56,9 @@ h3,.h3 {
     padding-top: .5em;
 }
 
-b {
+b, bold {
     color: #2196F3;
+    font-weight: bold;
 }
 
 strong {
@@ -133,6 +147,25 @@ a:hover {
     background-color: #E64A19;
 }
 
+/* Borderless table */
+
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    color: #FFFFFF;
+    background-color: #FF5722;
+    border: none;
+}
+
+
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th {
+    border: none;
+}
+
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th, {
+    border: none;
+}
 
 /* Other styles */
 
@@ -189,8 +222,9 @@ div#banner {
     background-image: url(../img/cphh.png);
 }
 
-#bannertxt {
+.bannertxt {
     color: #FFFFFF;
     background-color: rgba(25,118,210,0.70);
-    line-height: 1.5em;
+    line-height: 1.6em;
+    padding: 0.1em;
 }

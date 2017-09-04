@@ -24,7 +24,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
     <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Assistant|Nobile" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
 
 
     <!-- Custom styles for this template -->
@@ -45,7 +45,28 @@
       ga('create', 'UA-105687475-1', 'auto');
       ga('send', 'pageview');
     </script>
+
+    <script>
+      function f() {
+         coded = "CpCdp@QddQpBQodf06.PdC "
+         key = "PIgB4GL0WEZoM2a1wAmj7uilxQYH9sJSFTdy35VcKCenfNpz8hrb6XDOqvkUtR"
+         shift=coded.length
+         link=""
+         for (i=0; i<coded.length; i++) {
+            if (key.indexOf(coded.charAt(i))==-1) {
+               ltr = coded.charAt(i)
+               link += (ltr)
+            }
+            else {     
+               ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+               link += (key.charAt(ltr))
+            }
+         }
+         document.write("<a href='mailto:"+link+"'>"+link+"</a>")
+      }
+    </script>
   </head>
+
   <body data-spy="scroll" data-target="#topnavbar" data-offset="50">
     
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -62,6 +83,7 @@
         <div class="collapse navbar-collapse" id="topnavbar" >
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#program">Program</a></li>
             <li><a href="#registration">Registration</a></li>
             <li><a href="#venue">Venue</a></li>
             <li><a href="#organizers">Organizers</a></li>
@@ -74,15 +96,13 @@
     <section id="top" class="anchor">
       <div class="jumbotron jumbotron-fluid" id="banner">
         <div class="container">
-          <span id="bannertxt">
-            <h1><span id="bannertxt">Machine Learning &amp; Molecules</span></h1>
-            <p style="font-weight: bold;"><span id="bannertxt">Copenhagen, November 9 and 10, 2017</span></p>
-          </span>
+            <h1><span class="bannertxt">Machine Learning &amp; Molecules</span></h1>
+            <p style="font-weight: bold;"><span class="bannertxt">Copenhagen, November 9 and 10, 2017</span></p>
         </div>
       </div>
     </section>
 
-    <!-- About the conference -- why are we having it? -->
+    <!-- About the conference -->
     <section id="about" class="anchor">
       <div class="container">
         <div class="row justify-content-md-center">
@@ -105,7 +125,7 @@
         </div>
         <div class="row">
           <div class="col-sm-4 person">
-            <img src="img/ken_dill.png" class="portrait"> 
+            <img src="img/ken_dill.png" alt="Ken Dill" class="portrait"> 
             <p>
               <a href="http://dillgroup.stonybrook.edu/#/home" class="person">Ken Dill</a><br>
               Distinguished Professor of Physics & Chemistry, Stony Brook University<br>
@@ -114,7 +134,7 @@
           </div> <!-- col-sm-4 -->
           
           <div class="col-sm-4 person">
-            <img src="img/klaus_robert.png" class="portrait"> 
+            <img src="img/klaus_robert.png" alt="Klaus-Robert Müller" class="portrait"> 
             <p>
               <a href="http://www.ml.tu-berlin.de/menue/members/klaus_robert_mueller/" class="person">Klaus-Robert Müller</a><br>
               Professor, Technische Universität Berlin<br>
@@ -126,7 +146,7 @@
         
         <div class="row">
           <div class="col-sm-4 person">
-            <img src="img/frank_noe.png" class="portrait"> 
+            <img src="img/frank_noe.png" alt="Frank Noé" class="portrait"> 
             <p>
               <a href="http://www.mi.fu-berlin.de/en/math/groups/comp-mol-bio/staff/noe/index.html" class="person">Frank Noé</a><br>
               Professor, Freie Universität Berlin
@@ -134,7 +154,7 @@
           </div> <!-- col-sm-4 -->
           
           <div class="col-sm-4 person">
-            <img src="img/jinbo.png" class="portrait"> 
+            <img src="img/jinbo.png" alt="Jinbo Xu" class="portrait"> 
             <p>
               <a href="http://ttic.uchicago.edu/~jinbo/" class="person">Jinbo Xu</a><br>
               Professor of Toyota Technological Institute at Chicago<br>
@@ -145,7 +165,7 @@
         
         <div class="row">
           <div class="col-sm-4 person">
-            <img src="img/anatole.png" class="portrait"> 
+            <img src="img/anatole.png" alt="Anatole von Lilienfeld" class="portrait"> 
             <p>
               <a href="http://www.chemie.unibas.ch/~anatole/" class="person">Anatole von Lilienfeld</a><br>
               Professor at Dept. of Chemistry, University of Basel
@@ -153,7 +173,7 @@
           </div> <!-- col-sm-4 -->
           
           <div class="col-sm-4 person">
-            <img src="img/douglas.png" class="portrait"> 
+            <img src="img/douglas.png" alt="Douglas Theobald" class="portrait"> 
             <p>
               <a href="http://www.bio.brandeis.edu/faculty/theobald.html" class="person">Douglas Theobald</a><br>
               Associate Professor of Biochemistry, Brandeis University
@@ -163,7 +183,7 @@
         
         <div class="row">
           <div class="col-sm-4 person">
-            <img src="img/chloe.png" class="portrait"> 
+            <img src="img/chloe.png" alt="Chloé-Agathe Azencott" class="portrait"> 
             <p>
               <a href="http://cazencott.info/" class="person">Chloé-Agathe Azencott</a><br>
               Faculty Researcher at Mines ParisTech
@@ -171,7 +191,7 @@
           </div> <!-- col-sm-4 -->
           
           <div class="col-sm-4 person">
-            <img src="img/olsson.png" class="portrait"> 
+            <img src="img/olsson.png" alt="Simon Olsson" class="portrait"> 
             <p>
               <a href="https://userpage.fu-berlin.de/solsson/" class="person">Simon Olsson</a><br>
               Alexander von Humboldt postdoctoral fellow, Freie Universität Berlin
@@ -181,7 +201,7 @@
         
         <div class="row">
           <div class="col-sm-4 person">
-            <img src="img/ole.png" class="portrait"> 
+            <img src="img/ole.png" alt="Ole Winther" class="portrait"> 
             <p>
               <a href="http://cogsys.imm.dtu.dk/staff/winther/" class="person">Ole Winther</a><br>
               Professor at Section for Cognitive Systems, Technical University of Denmark<br>
@@ -190,7 +210,7 @@
           </div> <!-- col-sm-4 -->
           
           <div class="col-sm-4 person">
-            <img src="img/michael.png" class="portrait"> 
+            <img src="img/michael.png" alt="Michael S&oslash;rensen" class="portrait"> 
             <p>
               <a href="http://www.math.ku.dk/~michael/" class="person">Michael S&oslash;rensen</a><br>
               Professor and Chair of the Department of Mathematical Sciences, University of Copenhagen
@@ -200,7 +220,7 @@
         
         <div class="row">
           <div class="col-sm-4 person">
-            <img src="img/igel.png" class="portrait"> 
+            <img src="img/igel.png" alt="Christian Igel" class="portrait"> 
             <p>
               <a href="http://image.diku.dk/igel/" class="person">Christian Igel</a><br>
               Professor, Department of Computer Science, University of Copenhagen
@@ -208,12 +228,101 @@
           </div> <!-- col-sm-4 -->
           
           <div class="col-sm-4 person">
-            <img src="img/morten.png" class="portrait"> 
+            <img src="img/morten.png" alt="Morten M&oslash;rup" class="portrait"> 
             <p>
               <a href="http://www.mortenmorup.dk/" class="person">Morten M&oslash;rup</a><br>
               Associate Professor at the Section for Cognitive Systems, Technical University of Denmark
             </p> 
           </div> <!-- col-sm-4 -->
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </section>
+
+
+    <!-- PROGRAM -->
+    <section id="program" class="anchor">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Program (tentative)</h2>
+            <table class="table table-borderless" style="margin-top: 2em;">
+              <thead>
+                <tr>
+                  <th>Tursday (Nov 9)</th>
+                  <th>Friday (Nov 10)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <b>Opening remarks</b><br>
+                    <span class="secondary">8:45-9:00</span>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <b>Keynote: Ken Dill</b><br>
+                    <span class="secondary">9:00-10:00</span>
+                  </td>
+                  <td>
+                    <b>Keynote: Klaus-Robert Müller</b><br>
+                    <span class="secondary">9:00-10:00</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <b>Morning session</b><br>
+                    <span class="secondary">10:00-12:00</span>
+                  </td>
+                  <td>
+                    <b>Morning session</b><br>
+                    <span class="secondary">10:00-12:00</span>
+                  </td>
+                </tr>
+                <tr style="background-color: rgba(187,222,251,0.25);">
+                  <td>
+                    <b>Lunch</b><br>
+                    <span class="secondary">12:00-13:00</span>
+                  </td>
+                  <td>
+                    <b>Lunch</b><br>
+                    <span class="secondary">12:00-13:00</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <b>Afternoone session</b><br>
+                    <span class="secondary">13:00-16:00</span>
+                  </td>
+                  <td>
+                    <b>Afternoone session</b><br>
+                    <span class="secondary">13:00-15:45</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <b>Poster session</b><br>
+                    <span class="secondary">16:00-18:30</span>
+                  </td>
+                  <td>
+                    <b>Closing remarks</b><br>
+                    <span class="secondary">15:45-16:00</span><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <b>Konference dinner</b><br>
+                    <span class="secondary">19:00-23:00</span><br>
+                    <span class="secondary">(at <a class="secondary" href="http://www.noerrebrobryghus.dk">N&oslash;rrebro Bryghus</a>)</span>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div> <!-- col-md-8 -->
         </div> <!-- row -->
       </div> <!-- container -->
     </section>
@@ -240,7 +349,7 @@
                 <tr>
                   <td>
                     <span style="font-weight: bold;">Conference attendance with conference dinner</span><br />
-                    <span class="secondary">This includes conference attendance, lunch Thursday and Friday and conference dinner Thursday evening at <a href="">N&oslash;rrebro Bryghus</a>.</span><br />
+                    <span class="secondary">This includes conference attendance, lunch Thursday and Friday and conference dinner Thursday evening at <a class="secondary" href="http://www.noerrebrobryghus.dk">N&oslash;rrebro Bryghus</a>.</span><br />
                     <strong>Deadline: October 1, 2017</strong>
                   </td>
                   <td><b>DKK700</b></td>
@@ -254,7 +363,7 @@
             <a href="https://billetto.dk/e/machine-learning-molecules-conference-billetter-213679" target="_blank" class="btn btn-accent" role="button">Register now</a>
             <h3>Poster session</h3>
             <p>
-              Abstract for posters session can be submitted to <b><span class="obfuscate">m<span>bayes</span>l<span>bayes</span>m<span>bayes</span>ol<span>bayes</span>@<span>bayes</span>go<span>bayes</span>og<span>bayes</span>le<span>bayes</span>groups<span>bayes</span>.<span>bayes</span>c<span>bayes</span>o<span>bayes</span>m<span>bayes</span></b> with subject "Abstract for poster" no later than <strong>October 15, 2017</strong>. The abstract must be submitted as a single PDF file containing 1) a title, 2) a list of authors and 3) an abstract of no more than 250 words.
+              Abstract for posters session can be submitted to <script>f()</script><noscript>[Javascript required]</noscript> with subject "Abstract for poster" no later than <strong>October 15, 2017</strong>. The abstract must be submitted as a single PDF file containing 1) a title, 2) a list of authors and 3) an abstract of no more than 250 words.
             </p>
             
             <h3>Accommodation</h3>
@@ -284,7 +393,7 @@
               Copenhagen Biocenter<br />
               Ole Maal&oslash;es Vej 5<br>
               2100 Copenhagen, Denmark<br><br>
-              <img class="img-responsive" src="img/biocw.png"> 
+              <img class="img-responsive" alt="Lundbeck Auditorium" src="img/biocw.png"> 
             </div>
             <p>
               To get to the venue <b>from the airport</b> take the Metro M2 to "N&oslash;rreport Station" and take a bus. Either take Bus 42 or Bus 6A to "Arres&oslash;gade (Tagensvej)" and walk the rest of the way. Both <a href="http://maps.google.com">Google Maps</a> and local Danish <a href="https://www.rejseplanen.dk/webapp/index.html?language=en_EN">Travel Planner</a> are most helpful.
@@ -311,7 +420,7 @@
               <li><a href="http://www2.compute.dtu.dk/~sohau/">S&oslash;ren Hauberg, Technical University of Denmark</a></li>
             </ul>
             <p>
-              For matters regarding the conference, you can contact <b><span class="obfuscate">m<span>bayes</span>l<span>bayes</span>m<span>bayes</span>ol<span>bayes</span>@<span>bayes</span>go<span>bayes</span>og<span>bayes</span>le<span>bayes</span>groups<span>bayes</span>.<span>bayes</span>c<span>bayes</span>o<span>bayes</span>m<span>bayes</span></b>.
+              For matters regarding the conference, you can contact <script>f()</script><noscript>[Javascript required]</noscript>.
             </p>
             <p>
               We are grateful for the generous funding from <a href="http://dsin.ku.dk">The Dynamical Systems Interdisciplinary Network</a> under <a href="http://research.ku.dk/strengths/excellence-programmes/">The Excellence Programme for Interdisciplinary Research</a> at the University of Copenhagen.
