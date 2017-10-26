@@ -228,3 +228,35 @@ div#banner {
     line-height: 1.8em;
     padding: 0.1em;
 }
+
+/* Styling for program */
+
+
+
+.pp { /* Program person */
+    color: #FF5722;
+    font-weight: bold;
+}
+
+.ps { /* Program session title */
+    color: #2196F3;
+    font-weight: bold;
+}
+
+.pt { /* Program talk title */
+    font-style: italic;
+}
+
+.pc { /* Program chair */
+    font-style: italic;
+}
+
+.pb { /* Program break, lunch, dinner */
+    color: #2196F3;
+    font-weight: bold;
+}
+
+.hl {
+    background-color: rgba(187,222,251,0.25);
+}
+
