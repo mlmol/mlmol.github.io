@@ -260,3 +260,10 @@ div#banner {
     background-color: rgba(187,222,251,0.25);
 }
 
+.pauthor { /* Poster author */
+    color: #2196F3;
+}
+
+.ptitle { /* Poster title */
+    font-style: italic;
+}
