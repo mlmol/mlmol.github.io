@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Homepage for Machine Learning and Molecules conference">
+    <meta name="author" content="Soren Hauberg, Thomas Hamelryck, Wouter Boomsma, Jes Frellsen">
+    <title>Machine Learning &amp; Molecules 2017</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Font Academicons CSS -->
+    <link rel="stylesheet" href="vendor/academicons/css/academicons.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-105687475-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <script>
+      function f() {
+         coded = "CpCdp@QddQpBQodf06.PdC "
+         key = "PIgB4GL0WEZoM2a1wAmj7uilxQYH9sJSFTdy35VcKCenfNpz8hrb6XDOqvkUtR"
+         shift=coded.length
+         link=""
+         for (i=0; i<coded.length; i++) {
+            if (key.indexOf(coded.charAt(i))==-1) {
+               ltr = coded.charAt(i)
+               link += (ltr)
+            }
+            else {     
+               ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+               link += (key.charAt(ltr))
+            }
+         }
+         document.write("<a href='mailto:"+link+"'>"+link+"</a>")
+      }
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target="#topnavbar" data-offset="50" style="padding-top: 0px;">
+    
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <section id="top" class="anchor">
+      <div class="jumbotron jumbotron-fluid" id="banner">
+        <div class="container">
+            <h1><span class="bannertxt">Machine Learning &amp; Molecules</span></h1>
+            <p style="font-weight: bold;"><span class="bannertxt">Copenhagen, November 9 and 10, 2017</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAM -->
+    <section id="program" class="anchor">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Program</h2>
+            <table class="table table-borderless" style="margin-top: 2em;">
+              <thead>
+                <tr style="font-weight: bold;">
+                  <td colspan="2" rowspan="1">Thursday (Nov 9)</td>
+                  <td colspan="2" rowspan="1">Friday (Nov 10)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="hl">
+                  <td colspan="2" rowspan="1">Session 1<br /><span class="ps">Predicting biomolecular structure</span><br /><span class="pc">Chair: Thomas Hamelryck</span></td>
+                  <td colspan="2" rowspan="1"><p>Session 4<br /><span class="ps">Quantum Chemistry</span><br /><span class="pc">Chair: Jes Frellsen</span></td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary">8:45-9:00</td>
+                  <td colspan="1" rowspan="1" class="pb">Opening remarks</td>
+                  <td colspan="1" rowspan="1" class="secondary">9:00-10:00</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Klaus-Robert Müller</span><br /><span class="pt">Machine learning meets quantum chemistry</span></td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary">9:00-10:00</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Ken Dill</span><br /><span class="pt">The combinatoric challenge of computing protein structures</span></td>
+                  <td colspan="1" rowspan="1" class="secondary">10:00-10:45</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Anatole von Lilienfeld</span><br /><span class="pt">Quantum machine learning</span></td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary">10:00-10:30</td>
+                  <td colspan="1" rowspan="1" class="pb">Coffee</td>
+                  <td colspan="1" rowspan="1" class="secondary">10:45-11:15</td>
+                  <td colspan="1" rowspan="1" class="pb">Coffee</td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary">10:30-11:15</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Jinbo Xu</span><br /><span class="pt">Protein contact prediction and folding by deep learning</span></td>
+                  <td colspan="2" rowspan="1" class="hl">Mini session<br /><span class="ps">Machine Learning tools</span><br /><span class="pc">Chair: Thomas Hamelryck</span></td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary">11:15-12:00</td>
+                  <td colspan="1" rowspan="1"><span class="pp">John Ingraham</span><br /><span class="pt">Learning the sequence-to-structure map</span></td>
+                  <td colspan="1" rowspan="1" class="secondary">11:15-12:00</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Christian Igel</span><br /><span class="pt">Large-scale machine learning without cloud or cluster</span></td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary">12:00-13:00</td>
+                  <td colspan="1" rowspan="1" class="pb">Lunch</td>
+                  <td colspan="1" rowspan="1" class="secondary">12:00-13:00</td>
+                  <td colspan="1" rowspan="1" class="pb">Lunch</td>
+                </tr>
+                <tr class="hl">
+                  <td colspan="2" rowspan="1">Session 2<br /><span class="ps">Biological Sequence Analysis</span><br /><span class="pc">Chair: Wouter Boomsma</span></td>
+                  <td colspan="2" rowspan="1">Session 5<br /><span class="ps">Directional Data</span><br /><span class="pc">Chain: Søren Hauberg</span></td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary">13:00-13:45</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Debora Marks</span><br /><span class="pt">Generative models for genomics</span></td>
+                  <td colspan="1" rowspan="1" class="secondary">13:00-13:30</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Michael Sørensen</span><br /><span class="pt">Toroidal diffusions with a view to protein structure</span></td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary">13:45-14:30</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Douglas Theobald</span><br /><span class="pt">Fast Bayesian simultaneous optimization of multiple structural superpositions and alignments</span></td>
+                  <td colspan="1" rowspan="1" class="secondary">13:30-14:00</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Michael Golden</span><br /><span class="pt">A generative angular model of protein structure evolution</span></td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary">14:30-15:00</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Ole Winther</span><br /><span class="pt">Deep learning for biological sequence analysis</span></td>
+                  <td colspan="1" rowspan="1" class="secondary">14:00-14:30</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Morten Mørup</span><br /><span class="pt">Directional statistics and Bayesian inference for the modelling of functional neuroimaging data</span></td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary">15:00-15:15</td>
+                  <td colspan="1" rowspan="1" class="pb">Coffee</td>
+                  <td colspan="1" rowspan="1" class="secondary">14:30-15:00</td>
+                  <td colspan="1" rowspan="1" class="pb">Coffee</td>
+                </tr>
+                <tr class="hl">
+                  <td colspan="2" rowspan="1">Session 3<br /><span class="ps">Chemical design and drug response</span><br /><span class="pc">Chair: Jes Frellsen</span></td>
+                  <td colspan="2" rowspan="1">Session 6<br /><span class="ps">Protein Dynamics</span><br /><span class="pc">Chair: Wouter Boomsma</span></td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary">15:15-16:00</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Chloé-Agathe Azencott</span><br /><span class="pt">Leveraging task similarity in multi-task learning for drug response prediction</span></td>
+                  <td colspan="1" rowspan="1" class="secondary">15:00-15:45</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Frank Noé</span><br /><span class="pt">Learning molecular kinetics</span></td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary">16:00-16:45</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Miguel Hernández-Lobato</span><br /><span class="pt">Grammar variational autoencoder</span></td>
+                  <td colspan="1" rowspan="1" class="secondary">15:45-16:30</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Simon Olsson</span><br /><span class="pt">Conditional models of protein dynamics driven by simulation and experiment</span></td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary hl">16:45-18:45</td>
+                  <td colspan="1" rowspan="1" class="hl"><a class="ps" href="#posters">Poster Session</a></td>
+                  <td colspan="1" rowspan="1" class="secondary">16:30-16:40</td>
+                  <td colspan="1" rowspan="1" class="pb">Break</td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="2" class="secondary hl" style="vertical-align:middle;">19:00-</td>
+                  <td colspan="1" rowspan="2" class="hl" style="vertical-align:middle;"><span class="pb">Conference Dinner</span><br />at <a class="secondary" href="http://www.noerrebrobryghus.dk">N&oslash;rrebro Bryghus</a></td>
+                  <td colspan="1" rowspan="1" class="secondary">16:40-17:10</td>
+                  <td colspan="1" rowspan="1"><span class="pb">Closing talk</span><br /><span class="pp">Alexander Bard</span><br /><span class="pt">Beyond man and machine&mdash;the rise of intelligent systems in a network world</span></td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary hl">17:10-18:00</td>
+                  <td colspan="1" rowspan="1" class="hl"><span class="pb">Closing reception</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div> <!-- col-md-8 -->
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </section>
+    
+    
+  </body>
+</html>
